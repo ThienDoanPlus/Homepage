@@ -2,6 +2,7 @@
     font-family: IBM Plex Sans, sans-serif;
     font-size: 16px;
     list-style-type: none;
+    text-decoration: none;
 }
 body {
     height: 100%;
@@ -18,8 +19,9 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #fff;
+    background-color: transparent;
     z-index: 2;
+    margin: 0.5rem;
 }
 .header__inner {
     position: relative;
@@ -33,17 +35,19 @@ body {
     position: relative;
     width: 20%;
 }
-.logo span {
+.logo a {
+    color: #000;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin: 0 0 0 5%;
     font-weight: 500;
     font-size: 1.3rem;
+    transition: color 0.2s linear;
 }
 .logo img {
-    max-width: 3rem;
-    padding: 10px;
+    max-width: 4rem;
+    padding: 5px;
 }
 .menu {
     display: flex;
@@ -58,13 +62,12 @@ body {
 }
 .menu__link {
     color: #000;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     transition: color 0.2s linear;
 
 }
-.menu__link:hover {
+.menu__link:hover, .logo a:hover {
     color: #f77e3e;
 }
 .menu__icon {
@@ -82,25 +85,11 @@ body {
     width: 100%;
     height: 100vh;
 }
+.banner__wrapper {
+    display: flex;
+}
 .banner__content {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
     text-align: center;
     color: #fff;
-    width: 80%;
-}
-.banner__content h1, h2 {
-    margin: 0;
-
-}
-.banner__title {
-    font-weight: 600;
-    font-size: 5rem;
-    padding-bottom: 1rem;
-}
-.banner__subtitle {
-    font-weight: 400;
-    font-size: 1.2rem;
 }
