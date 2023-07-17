@@ -86,10 +86,27 @@ body {
     height: 100vh;
 }
 .banner__wrapper {
+    position: absolute;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .banner__content {
-    position: relative;
     text-align: center;
     color: #fff;
+    width: 50%;
+}
+.banner__title {
+    font-weight: 800;
+    font-size: 3rem;
+}
+.banner__subtitle {
+    font-size: 1.2rem;
+}
+.banner__video {
+    text-align: center;
+    width: 50%;
 }
