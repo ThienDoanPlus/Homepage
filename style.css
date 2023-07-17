@@ -110,3 +110,7 @@ body {
     text-align: center;
     width: 50%;
 }
+.video {
+    border: #fff solid 0.5rem;
+    border-radius: 10px;
+}
