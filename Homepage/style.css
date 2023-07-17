@@ -1,0 +1,85 @@
+* {
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+}
+body {
+    height: 100%;
+    min-height: 1000vh;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 100%;
+}
+
+/*Header*/
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+.header__inner {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    position: relative;
+    width: 20%;
+}
+.logo span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0 0 5%;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.logo img {
+    max-width: 3rem;
+    padding: 10px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+.menu__items {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.menu__link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: color 0.2s linear;
+
+}
+.menu__link:hover {
+    color: #f77e3e;
+}
+.menu__icon {
+    color: #000;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+    transition: color 0.2s linear;
+}
+
+/*Banner*/
+.banner {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://img.mvillage.vn/DGDsAjKeHcBeOwc6GDoZ6OIo-cVpo9lbHJscXBg_Qp0/rs:fit:1500:1500/plain/https%3A%2F%2Fs3.ap-southeast-1.amazonaws.com%2Fcdn.mvillage.vn%2FNNKN_2_ab7f9e4db7.jpeg") fixed;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: brightness(50%);
+}
